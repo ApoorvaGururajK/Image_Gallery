@@ -12,7 +12,8 @@ const Search = ({handleSubmit,word,setWord}) => {
                 type="input"  
                 value={word}
                 onChange={(e) => setWord(e.target.value)}
-                placeholder="Search for a new Image" /> //controlled component with the help of state
+                placeholder="Search for a new Image" /> 
+                {/* controlled component with the help of state */}
               </Col>
               <Col>
               <Button variant="primary" type="submit">Search</Button>
