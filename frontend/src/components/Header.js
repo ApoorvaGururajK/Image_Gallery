@@ -7,6 +7,7 @@ const Header = (props) => {
   const navStyle = {
     backgroundColor: "lightblue",
   };
+  console.log("Header comp render")
 
   return (
     <Navbar style={navStyle} variant="light">

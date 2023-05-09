@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form,Button } from "react-bootstrap";
 const Search = ({handleSubmit,word,setWord}) => {
+  console.log("Search component rendered")
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
