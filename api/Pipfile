@@ -9,6 +9,7 @@ requests = "*"
 chardet = "*"
 python-dotenv = "*"
 flask-cors = "*"
+pymongo = "*"
 
 [dev-packages]
 

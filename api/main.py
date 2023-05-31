@@ -3,6 +3,7 @@ import requests
 from flask import Flask, request
 from dotenv import load_dotenv
 from flask_cors import CORS
+from mongodb_client import insert_test_documets
 
 load_dotenv(dotenv_path="./.env.local")
 
@@ -19,6 +20,8 @@ CORS(app)
 
 # This is done to enable the Debug mode. To disable it, add a  variable called DEBUG in .env.local without value. i.e empty string. DEBUG=
 app.config["DEBUG"] = DEBUG 
+
+insert_test_documets()
 
 @app.route("/new-image")
 def new_image():
