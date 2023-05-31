@@ -6,7 +6,7 @@ const ImageCard = ({images, handleDelete}) => {
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={images.urls.small} />
       <Card.Body>
-        <Card.Title>{images.title.toUpperCase()}</Card.Title>
+        <Card.Title>{images.title?.toUpperCase()}</Card.Title>
         <Card.Text>
           {images.description ?  images.description : images.alt_description} 
         </Card.Text>
